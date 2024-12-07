@@ -7,3 +7,4 @@ langchain-text-splitters==0.0.1
 langdetect==1.0.9
 streamlit==1.30.0
 PyPDF2==3.0.1
+faiss-cpu==1.8.0
