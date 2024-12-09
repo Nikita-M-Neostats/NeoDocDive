@@ -135,7 +135,7 @@ def main():
     #setting up page configuration
     st.set_page_config(page_title="NeoDocDive", page_icon="NeoStats_Logo_N.png", layout='wide')
 
-    st.image('NeoStats_Logo.png', output_format="PNG", width=535)
+    st.image('Company_Logo.png', output_format="PNG", width=535)
     st.title("Neo Doc Dive")
     st.subheader("(AI Powered PDF Querying Chatbot)\n")
 
