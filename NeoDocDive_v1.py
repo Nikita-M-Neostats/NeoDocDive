@@ -179,7 +179,7 @@ def main():
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        with st.chat_message("assistant", avatar='NeoStats_Logo_N.png'):
+        with st.chat_message("assistant", avatar='Company_Logo.png'):
 
             st.markdown(response)
 
