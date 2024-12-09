@@ -133,23 +133,23 @@ def chatbot_long(query: str):
 def main():
     
     #setting up page configuration
-    st.set_page_config(page_title="NeoDocDive", page_icon="NeoStats_Logo_N.png", layout='wide')
+    st.set_page_config(page_title="NeoDocDive", page_icon="Company_Icon.png", layout='wide')
 
     st.image('Company_Logo.png', output_format="PNG", width=535)
-    st.title("Neo Doc Dive")
+    st.title("Doc Dive")
     st.subheader("(AI Powered PDF Querying Chatbot)\n")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    with st.chat_message("assistant", avatar='NeoStats_Logo_N.png'):
+    with st.chat_message("assistant", avatar='Company_Icon.png'):
         st.markdown("<h3 style='text-align: center;'>Hi! How can I help you today?</h3>\n\nI am an AI Chatbot capable of answering questions from the uploaded PDF",
                     unsafe_allow_html=True)
 
     #Setting up chat elements for assistant and user
     for message in st.session_state.messages:
         if message['role'] == 'assistant':
-            with st.chat_message(message['role'], avatar='NeoStats_Logo_N.png'):
+            with st.chat_message(message['role'], avatar='Company_Icon.png'):
                 st.markdown(message['content'])
         else:
             with st.chat_message(message['role']):
