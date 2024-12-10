@@ -157,6 +157,8 @@ def main():
 
     #Sidebar for providing document that is to be read - passing to file_loader() function
     with st.sidebar:
+      
+        st.image('Company_Logo.png', output_format="PNG", width=535)
         st.subheader("Upload PDF File")
         doc = st.file_uploader("Upload file here, and click on  the 'Load File' button", accept_multiple_files=False)
         if st.button("Load File"):
