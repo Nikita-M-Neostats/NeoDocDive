@@ -134,8 +134,6 @@ def main():
     
     #setting up page configuration
     st.set_page_config(page_title="NeoDocDive", page_icon="Company_Icon.png", layout='wide')
-
-    st.image('Company_Logo.png', output_format="PNG", width=535)
     st.title("Doc Dive")
     st.subheader("(AI Powered PDF Querying Chatbot)\n")
 
@@ -158,7 +156,7 @@ def main():
     #Sidebar for providing document that is to be read - passing to file_loader() function
     with st.sidebar:
       
-        st.image('Company_Logo.png', output_format="PNG", width=535)
+        st.image('Company_Logo.png', output_format="PNG", width=435)
         st.subheader("Upload PDF File")
         doc = st.file_uploader("Upload file here, and click on  the 'Load File' button", accept_multiple_files=False)
         if st.button("Load File"):
