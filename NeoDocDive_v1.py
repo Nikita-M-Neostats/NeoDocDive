@@ -1,10 +1,3 @@
-'''
-AUTHOR: uday.marwah
-TIME: 16-05-2024 10:01:27
-
-NEO DOC DIVE: PDF RAG CHATBOT APP FOR NEOSTATS INTERNAL USE
-'''
-
 ##Preliminary and dependencies
 from dotenv import load_dotenv
 import os
@@ -156,7 +149,7 @@ def main():
     #Sidebar for providing document that is to be read - passing to file_loader() function
     with st.sidebar:
       
-        st.image('Company_Logo.png', output_format="PNG", width=435)
+        st.image('Company_Logo.png', output_format="PNG", width=350)
         st.subheader("Upload PDF File")
         doc = st.file_uploader("Upload file here, and click on  the 'Load File' button", accept_multiple_files=False)
         if st.button("Load File"):
